@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Django Forms</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <form method="POST" action="/" >
+        {% csrf_token %}
+    <table>
+        <tr><th><label for="id_field1">field1:</label></th><td><input type="number" name="field1" required id="id_field1" /></td></tr>
+        <tr><th><label for="id_field2">field2:</label></th><td><input type="number" name="field2" required id="id_field2" /></td></tr>
+    </table>
+        <input type="submit" value="Send" >
+</form>
+</body>
+</html>
